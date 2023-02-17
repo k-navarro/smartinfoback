@@ -43,7 +43,7 @@ const getUsuario = (req, res) => __awaiter(void 0, void 0, void 0, function* () 
     const { body } = req;
     const usuario = yield usuario_1.default.findOne({
         where: {
-            email: body.email
+            email: body.email,
         },
     });
     if (usuario) {
